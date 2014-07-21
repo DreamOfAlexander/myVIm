@@ -1,0 +1,23 @@
+
+nf>
+  <!-- Version 1.01 -->
+
+	  <!-- アプリケーションのホームディレクトリ -->
+		  <app-home-dir>c:\apphome</app-home-dir>
+
+			  <!-- ライブラリのディレクトリ -->
+				  <lib-dir>lib</lib-dir>
+
+					  <!-- ログを格納するディレクトリ -->
+						  <log-dir>log</log-dir>
+
+							  <!-- システムの種類 -->
+								  <system>xxx yyy zzz</system>
+
+									  <!-- ログの種類 -->
+										  <log-types>
+											    <cpu script="parse_cpu.pl" from-dir="raw/cpu" to-dir="edit/cpu" />
+													    <mem script="parse_mem.pl" from-dir="raw/mem" to-dir="edit/mem" />
+															    <gclog script="parse_gclog.pl" from-dir="raw/gclog" to-dir="edit/gclog" />
+																	  </log-types>
+																		</conf>
